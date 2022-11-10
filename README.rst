@@ -1,6 +1,9 @@
 `schedule with persistence <https://schedule.readthedocs.io/>`__
 ===============================================
 
+## WORK IN PROGRESS! ##
+
+The original version is cassandra db centric and uses an XLSX file copied to each node, for jobs to run. Changes are being made to make the schedule file xlsx, csv or db table.
 
 .. image:: https://github.com/dbader/schedule/workflows/Tests/badge.svg
         :target: https://github.com/dbader/schedule/actions?query=workflow%3ATests+branch%3Amaster
@@ -11,7 +14,9 @@
 .. image:: https://img.shields.io/pypi/v/schedule.svg
         :target: https://pypi.python.org/pypi/schedule
 
-Python job scheduling for humans. Run Python functions (or any other callable) periodically using a friendly syntax.
+DBader: 'Python job scheduling for humans'. Run Python functions (or any other callable) periodically using a friendly syntax.
+
+This is a windows centric version of dbaders schedule library, with added persistence and recording of when-last-run. The scheduler can also be distributed across several machines, which read their jobs from a central schedule file or database table.
 
 - A simple to use API for scheduling jobs, made for humans.
 - In-process scheduler for periodic jobs. No extra processes needed!
@@ -25,10 +30,12 @@ Python job scheduling for humans. Run Python functions (or any other callable) p
 
 Usage
 -----
-
+You can either pip install from this github repository, or from the repo location that you forked this repo to:
 .. code-block:: bash
 
-    $ pip install schedule
+    (base)C:\Users\Username> pip install 'persistent_schedule @ git+https://github.com/julianrcook/persistent_schedule'
+    (base)C:\Users\Username> python run_safe_scheduler.py
+    
 
 .. code-block:: python
 

@@ -1,4 +1,4 @@
-`schedule <https://schedule.readthedocs.io/>`__
+`schedule with persistence <https://schedule.readthedocs.io/>`__
 ===============================================
 
 
@@ -18,6 +18,10 @@ Python job scheduling for humans. Run Python functions (or any other callable) p
 - Very lightweight and no external dependencies.
 - Excellent test coverage.
 - Tested on Python and 3.6, 3.7, 3.8, 3.9
+- (+) integration of safe_schedule class
+- (+) additions to handle reading a schedule from an xlsx file
+- (+) single schedule for multiple nodes
+- (+) loading of history from a csv file including time of last run
 
 Usage
 -----

@@ -31,6 +31,8 @@ This is a windows centric version of dbaders schedule library, with added persis
 Usage
 -----
 You can either pip install from this github repository, or from the repo location that you forked this repo to:
+
+
 .. code-block:: bash
 
     (base)C:\Users\Username> pip install 'persistent_schedule @ git+https://github.com/julianrcook/persistent_schedule'
@@ -64,7 +66,7 @@ You can either pip install from this github repository, or from the repo locatio
         schedule.run_pending()
         time.sleep(1)
 
-Documentation
+Schedule Documentation
 -------------
 
 Schedule's documentation lives at `schedule.readthedocs.io <https://schedule.readthedocs.io/>`_.
